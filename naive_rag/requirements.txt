@@ -1,0 +1,13 @@
+huggingface-hub
+
+Flask
+Werkzeug
+flask-cors
+
+llama-index
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+torch
+
+# manually install below module if encounter dependency issue with `requirements.txt`
+llama-index-vector-stores-chroma
