@@ -4,4 +4,5 @@ Adopted from [here](https://medium.com/rahasak/build-rag-application-using-a-llm
 
 ```
 pip install -r requirements.txt
+python api.py
 ```

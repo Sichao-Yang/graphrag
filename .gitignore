@@ -2,3 +2,4 @@ lancedb
 cache
 output
 .vscode
+__pycache__
