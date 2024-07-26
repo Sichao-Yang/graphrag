@@ -8,31 +8,7 @@ notice, you need to replace the embedding_model file in the graphrag lib (this i
 
 also notice, for local rag, this hack will fail. so more modification needs to be done.
 
-here is some cmds used:
-
-```
-conda create -n graphollama python=3.10 -y && conda activate graphollama
-
-pip install ollama 
-
-ollama pull mistral     # you need mistral to meet the context window limit
-ollama pull nomic-embed-text 
-
-pip install graphrag
-
-mkdir -p ./graph_rag/input
-cp book.txt graph_rag/input 
-
-python3 -m graphrag.index --init --root ./graph_rag
-
-cd graph_rag , vi settings
-# change query model name, embedding model name, api_base
-sudo find / -name openai_embeddings_llm.py
-
-python3 -m graphrag.index --root /home/sichaoy/graphrag/tmp
-
-python3 -m graphrag.query --root /home/sichaoy/graphrag/tmp --method global "What are the top themes in this story?"
-```
+you can run it from this [script](./graph_rag_run/run.py)
 
 ## naiveRAG
 
